@@ -1,5 +1,5 @@
 [project]
-name = "get-papers"
+name = "get-papers-aathi"
 version = "0.1.0"
 description = ""
 authors = [
@@ -17,3 +17,11 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 get-papers-list = "cli:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
+[tool.poetry]
+packages = [
+    { include = "get_papers" }
+]
