@@ -1,11 +1,15 @@
-# Get Papers List
+# get-papers-list
 
-Fetch PubMed research papers with pharmaceutical or biotech company affiliations.
+Fetches research papers from PubMed based on a query, filters for pharmaceutical/biotech affiliations, and saves the results as a CSV.
 
-## 🔧 Installation
+## Features
+
+- Fetch PubMed papers
+- Filter authors with non-academic affiliations
+- Save results as CSV or print to console
+- Command-line interface
+
+## Install
 
 ```bash
 poetry install
-
-To run the command
-example command : poetry run get-papers-list "cancer vaccine" -f results.csv

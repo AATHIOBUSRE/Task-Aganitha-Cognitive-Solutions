@@ -1,27 +1,18 @@
-[project]
-name = "get-papers-aathi"
-version = "0.1.0"
-description = ""
-authors = [
-    {name = "AATHIOBUSRE", email = "aathiobusre@gmail.com"}
-]
+[tool.poetry]
+name = "get-papers-tests"
+version = "0.1.2"
+description = "Fetch PubMed papers with pharma/biotech affiliations"
+authors = ["Aathi Obusre <aathiobusre@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "requests>=2.32.4,<3.0.0"
-]
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+packages = [{ include = "get_papers" }]
 
 [tool.poetry.scripts]
 get-papers-list = "cli:main"
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.4.1"
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.4"
 
-[tool.poetry]
-packages = [
-    { include = "get_papers" }
-]
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
